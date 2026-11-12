@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Account Sync index",
+    "zh": "账号同步索引"
+  },
+  "description": {
+    "en": "Self-hosted index for Account Sync: cross-terminal sync of plugins, settings, workspace files, sessions and skills for one DeepSeek account.",
+    "zh": "账号同步的自建索引：同一 DeepSeek 账号下的多终端插件、设置、工作区文件、会话与技能同步。"
+  },
+  "metadata": {
+    "categories": {
+      "tools": {
+        "title": {
+          "en": "Tools & utility",
+          "zh": "工具与实用"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-account-sync",
+      "title": "dsh-plugin-account-sync",
+      "description": {
+        "en": "Keeps the same account's terminals in sync: installed plugins and enablement, app settings, selected workspace files, session logs, and skills / agent presets. Folder, git, WebDAV and LAN transports; every content category is an independent toggle; dry-run plan, conflict copies and additive-only session import.",
+        "zh": "让同一账号下的多台终端保持一致：已安装插件及启用状态、应用设置、选定的工作区文件、会话记录、技能 / Agent 预设。支持共享文件夹、Git、WebDAV、局域网四种传输方式；每类内容独立开关；支持预演计划、冲突副本，会话只做增量导入。"
+      },
+      "homepage": "https://github.com/karla-zhang/dsh-plugin-account-sync",
+      "repository": {
+        "url": "https://github.com/karla-zhang/dsh-plugin-account-sync"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "sync",
+          "multi-device",
+          "plugins",
+          "settings",
+          "workspace",
+          "sessions"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1762963200,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "node": ">=22"
+          }
+        }
+      ]
+    }
+  ]
+}

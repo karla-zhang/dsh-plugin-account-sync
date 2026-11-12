@@ -1,0 +1,4 @@
+# Account Sync adds only its own row. It replaces no official DSH component.
+- insert:
+    - id: account-sync
+      name: dsh-plugin-account-sync

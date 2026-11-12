@@ -1,0 +1,63 @@
+{
+  "name": "dsh-plugin-account-sync",
+  "version": "0.1.0",
+  "description": "Sync installed plugins, settings, workspace files, session logs and skills between terminals signed into the same DeepSeek account.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sync",
+    "multi-device",
+    "workspace",
+    "plugins"
+  ],
+  "author": "karla-zhang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karla-zhang/dsh-plugin-account-sync.git"
+  },
+  "homepage": "https://github.com/karla-zhang/dsh-plugin-account-sync#readme",
+  "bugs": {
+    "url": "https://github.com/karla-zhang/dsh-plugin-account-sync/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CONTRACT.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
