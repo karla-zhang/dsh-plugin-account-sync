@@ -21,6 +21,16 @@ real **Sync**.
 
 ## Install
 
+The plugin is published on [npm](https://www.npmjs.com/package/dsh-plugin-account-sync) and on
+[GitHub](https://github.com/karla-zhang/dsh-plugin-account-sync).
+
+```bash
+# by package name (npm)
+dsh plugin install dsh-plugin-account-sync
+```
+
+or, in the GUI: **Settings → Plugins → add plugin** and enter `dsh-plugin-account-sync`.
+
 1. Open **Settings → Plugins** (or the plugin market) and install the bundle from the local package
    directory: `plugin_manager` → `install_bundle` with `target` pointing at this folder, or the
    Profile → Plugins page's "install from folder".

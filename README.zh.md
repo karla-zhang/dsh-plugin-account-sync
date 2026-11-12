@@ -17,6 +17,16 @@ DSH 目前没有服务端的账号级存储（会话只会单向随推理请求�
 
 ## 安装
 
+已发布到 [npm](https://www.npmjs.com/package/dsh-plugin-account-sync) 与
+[GitHub](https://github.com/karla-zhang/dsh-plugin-account-sync)。
+
+```bash
+# 按包名安装（npm）
+dsh plugin install dsh-plugin-account-sync
+```
+
+或在 GUI 中：**设置 → 插件 → 添加插件**，输入 `dsh-plugin-account-sync`。
+
 1. 打开 **设置 → 插件**，从本地目录安装本 bundle（`plugin_manager` 的 `install_bundle` 指向本目录），或使用插件页的"从文件夹安装"。
 2. 若 DSH 提示需要重启，重启后打开 **设置 → Account Sync / 账户同步**。
 3. 选择传输方式并填写参数，点**测试**，再点**立即同步**（可先点**预览**）。
